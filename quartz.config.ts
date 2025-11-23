@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "pustotnik-ra.github.io/quartz-site",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     contentDir: "content",
