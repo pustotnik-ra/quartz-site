@@ -1,15 +1,21 @@
 @use "./base.scss";
 
-/* Раздвигаем статьи внутри папок в боковом меню */
-.explorer .node-link {
-    margin-top: 3px !important;    /* Отступ над статьей */
-    margin-bottom: 3px !important; /* Отступ под статьей */
-    display: block !important;
-    line-height: 1.4 !important;   /* Чтобы длинные названия не слипались */
+/* Целимся ТОЛЬКО во вложенные элементы (то есть ВНУТРЬ папок) */
+.explorer ul ul li {
+    margin-bottom: 15px !important; /* Мощный отступ между статьями */
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4) !important; /* Четкая серая линия-разделитель */
 }
 
-/* Опционально: небольшая черточка между статьями, чтобы визуально их разделить */
-.explorer .file-container .node-link {
-    border-bottom: 5px solid rgba(255, 255, 255, 0.05);
-    padding-bottom: 9px;
+/* Убираем линию у самой последней статьи в папке */
+.explorer ul ul li:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Раздвигаем строки у самих названий, чтобы они не наезжали друг на друга */
+.explorer ul ul li a {
+    line-height: 1.5 !important;
+    display: block !important;
 }

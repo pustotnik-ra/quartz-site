@@ -1,7 +1,7 @@
 ---
 about: Something about Quartz isn't working the way you expect
 assignees: ''
-created: '2026-02-14'
+date: 2026-03-29
 labels: bug
 name: Bug report
 status: legacy
