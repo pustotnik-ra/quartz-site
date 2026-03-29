@@ -1,3 +1,16 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+/* Добавляем отступ между ссылками в боковом меню (Explorer) */
+.explorer .node-link {
+    margin-bottom: 8px; /* Расстояние между статьями */
+    display: block;
+    line-height: 1.4;   /* Высота строки, чтобы длинные названия не слипались */
+}
+
+/* Добавляем легкую разделительную линию под каждой ссылкой (по желанию) */
+.explorer .node-link {
+    border-bottom: 1px solid var(--lightgray);
+    padding-bottom: 4px;
+}
