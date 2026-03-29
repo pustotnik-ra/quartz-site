@@ -1,24 +1,17 @@
 @use "./base.scss";
 
-// Твой новый блок для исправления "слипания"
-#explorer-content ul li {
-    margin-bottom: 12px !important; /* Расстояние между пунктами меню */
-    padding-bottom: 8px !important;
-    border-bottom: 1px dashed var(--lightgray) !important; /* Тонкая линия-разделитель */
-}
+@use "./base.scss";
 
-#explorer-content ul li:last-child {
-    border-bottom: none !important; /* Убираем линию у последнего элемента в списке */
-}
-
+/* Раздвигаем статьи внутри папок в боковом меню */
 .explorer .node-link {
-    display: inline-block !important;
-    line-height: 1.6 !important; /* Увеличиваем высоту строки для длинных названий */
-    text-decoration: none !important;
+    margin-top: 8px !important;    /* Отступ над статьей */
+    margin-bottom: 8px !important; /* Отступ под статьей */
+    display: block !important;
+    line-height: 1.4 !important;   /* Чтобы длинные названия не слипались */
 }
 
-/* Если хочешь, чтобы папки тоже стояли дальше друг от друга */
-.explorer .folder-container {
-    margin-top: 20px !important;
-    margin-bottom: 15px !important;
+/* Опционально: небольшая черточка между статьями, чтобы визуально их разделить */
+.explorer .file-container .node-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 4px;
 }
