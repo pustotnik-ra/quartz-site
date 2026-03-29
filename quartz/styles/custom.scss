@@ -1,21 +1,18 @@
 @use "./base.scss";
 
-/* Целимся ТОЛЬКО во вложенные элементы (то есть ВНУТРЬ папок) */
-.explorer ul ul li {
-    margin-bottom: 15px !important; /* Мощный отступ между статьями */
-    padding-bottom: 10px !important;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.4) !important; /* Четкая серая линия-разделитель */
-}
-
-/* Убираем линию у самой последней статьи в папке */
-.explorer ul ul li:last-child {
-    border-bottom: none !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-/* Раздвигаем строки у самих названий, чтобы они не наезжали друг на друга */
-.explorer ul ul li a {
-    line-height: 1.5 !important;
+/* 1. ПРИЖИМАЕМ строки внутри одного названия друг к другу */
+.explorer ul li a {
+    line-height: 1.1 !important; /* Делаем текст плотным */
     display: block !important;
+}
+
+/* 2. ДЕЛАЕМ ПУСТУЮ СТРОКУ между разными статьями во вложенных папках */
+.explorer ul ul li {
+    margin-bottom: 20px !important; /* Вот он, мощный пробел между статьями */
+    border: none !important; /* Убираем все линии, оставляем только чистый воздух */
+}
+
+/* 3. Убираем пробел у самой последней статьи, чтобы не ломать низ папки */
+.explorer ul ul li:last-child {
+    margin-bottom: 0 !important;
 }
