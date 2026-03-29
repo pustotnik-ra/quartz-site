@@ -1,3 +1,11 @@
+---
+created: '2026-02-14'
+status: legacy
+summary: ''
+tags: []
+type: note
+---
+
 # Citizen Code of Conduct
 
 ## 1. Purpose

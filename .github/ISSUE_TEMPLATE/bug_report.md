@@ -1,9 +1,14 @@
 ---
-name: Bug report
 about: Something about Quartz isn't working the way you expect
-title: ""
+assignees: ''
+created: '2026-02-14'
 labels: bug
-assignees: ""
+name: Bug report
+status: legacy
+summary: ''
+tags: []
+title: ''
+type: note
 ---
 
 **Describe the bug**

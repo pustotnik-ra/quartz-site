@@ -1,9 +1,14 @@
 ---
-name: Feature request
 about: Suggest an idea or improvement for Quartz
-title: ""
+assignees: ''
+created: '2026-02-14'
 labels: enhancement
-assignees: ""
+name: Feature request
+status: legacy
+summary: ''
+tags: []
+title: ''
+type: note
 ---
 
 **Is your feature request related to a problem? Please describe.**
