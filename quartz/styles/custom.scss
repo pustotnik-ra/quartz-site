@@ -1,16 +1,24 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-
-/* Добавляем отступ между ссылками в боковом меню (Explorer) */
-.explorer .node-link {
-    margin-bottom: 8px; /* Расстояние между статьями */
-    display: block;
-    line-height: 1.4;   /* Высота строки, чтобы длинные названия не слипались */
+// Твой новый блок для исправления "слипания"
+#explorer-content ul li {
+    margin-bottom: 12px !important; /* Расстояние между пунктами меню */
+    padding-bottom: 8px !important;
+    border-bottom: 1px dashed var(--lightgray) !important; /* Тонкая линия-разделитель */
 }
 
-/* Добавляем легкую разделительную линию под каждой ссылкой (по желанию) */
+#explorer-content ul li:last-child {
+    border-bottom: none !important; /* Убираем линию у последнего элемента в списке */
+}
+
 .explorer .node-link {
-    border-bottom: 1px solid var(--lightgray);
-    padding-bottom: 4px;
+    display: inline-block !important;
+    line-height: 1.6 !important; /* Увеличиваем высоту строки для длинных названий */
+    text-decoration: none !important;
+}
+
+/* Если хочешь, чтобы папки тоже стояли дальше друг от друга */
+.explorer .folder-container {
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
 }
