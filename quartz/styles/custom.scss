@@ -1,18 +1,1 @@
 @use "./base.scss";
-
-/* 1. ПРИЖИМАЕМ строки внутри одного названия друг к другу */
-.explorer ul li a {
-    line-height: 1.1 !important; /* Делаем текст плотным */
-    display: block !important;
-}
-
-/* 2. ДЕЛАЕМ ПУСТУЮ СТРОКУ между разными статьями во вложенных папках */
-.explorer ul ul li {
-    margin-bottom: 20px !important; /* Вот он, мощный пробел между статьями */
-    border: none !important; /* Убираем все линии, оставляем только чистый воздух */
-}
-
-/* 3. Убираем пробел у самой последней статьи, чтобы не ломать низ папки */
-.explorer ul ul li:last-child {
-    margin-bottom: 0 !important;
-}
