@@ -1,11 +1,3 @@
----
-date: 2026-03-29
-status: legacy
-summary: ''
-tags: []
-type: note
----
-
 <!--
 Thanks for sending a pull request!
 

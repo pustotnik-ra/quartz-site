@@ -1,14 +1,9 @@
 ---
-about: Something about Quartz isn't working the way you expect
-assignees: ''
-date: 2026-03-29
-labels: bug
 name: Bug report
-status: legacy
-summary: ''
-tags: []
-title: ''
-type: note
+about: Something about Quartz isn't working the way you expect
+title: ""
+labels: bug
+assignees: ""
 ---
 
 **Describe the bug**

@@ -16,11 +16,10 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "pustotnik-ra.github.io/quartz-site",
+    baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
-    contentDir: "content",
-	theme: {
+    theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
