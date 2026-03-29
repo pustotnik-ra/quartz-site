@@ -1,9 +1,9 @@
 ---
 date: 2026-03-29
 status: legacy
-summary: "За ислам"
-title: "ra"
-type: "Статья"
+summary: ""
+title: []
+type: ""
 ---
 
 # Привет!
