@@ -1,17 +1,15 @@
 @use "./base.scss";
 
-@use "./base.scss";
-
 /* Раздвигаем статьи внутри папок в боковом меню */
 .explorer .node-link {
-    margin-top: 8px !important;    /* Отступ над статьей */
-    margin-bottom: 8px !important; /* Отступ под статьей */
+    margin-top: 3px !important;    /* Отступ над статьей */
+    margin-bottom: 3px !important; /* Отступ под статьей */
     display: block !important;
     line-height: 1.4 !important;   /* Чтобы длинные названия не слипались */
 }
 
 /* Опционально: небольшая черточка между статьями, чтобы визуально их разделить */
 .explorer .file-container .node-link {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding-bottom: 4px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 9px;
 }
